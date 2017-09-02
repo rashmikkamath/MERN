@@ -22434,9 +22434,89 @@ var App = function (_React$Component) {
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				"h1",
+				"div",
 				null,
-				"hello"
+				_react2.default.createElement(
+					"nav",
+					{ className: "navbar navbar-expand-lg navbar-dark bg-dark fixed-top" },
+					_react2.default.createElement(
+						"div",
+						{ className: "container" },
+						_react2.default.createElement(
+							"a",
+							{ className: "navbar-brand", href: "#" },
+							_react2.default.createElement("img", { src: "http://placehold.it/300x60?text=Logo", width: "150", height: "30", alt: "" })
+						),
+						_react2.default.createElement(
+							"button",
+							{ className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
+							_react2.default.createElement("span", { className: "navbar-toggler-icon" })
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "collapse navbar-collapse", id: "navbarResponsive" },
+							_react2.default.createElement(
+								"ul",
+								{ className: "navbar-nav ml-auto" },
+								_react2.default.createElement(
+									"li",
+									{ className: "nav-item active" },
+									_react2.default.createElement(
+										"a",
+										{ className: "nav-link", href: "#" },
+										"Home",
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"(current)"
+										)
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ className: "nav-item" },
+									_react2.default.createElement(
+										"a",
+										{ className: "nav-link", href: "#" },
+										"About"
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ className: "nav-item" },
+									_react2.default.createElement(
+										"a",
+										{ className: "nav-link", href: "#" },
+										"Services"
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									{ className: "nav-item" },
+									_react2.default.createElement(
+										"a",
+										{ className: "nav-link", href: "#" },
+										"Contact"
+									)
+								)
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "container" },
+					_react2.default.createElement(
+						"h1",
+						{ className: "mt-5" },
+						"Logo Nav by Start Bootstrap"
+					),
+					_react2.default.createElement(
+						"p",
+						null,
+						"The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo."
+					)
+				)
 			);
 		}
 	}]);
