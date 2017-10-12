@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Gallery from "./Gallery";
 
 export default class App extends React.Component{
 
+	
 	render(){
+		
 		return( 
 		<div>
 		
 		    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		      <div className="container">
-		        <a className="navbar-brand" href="#">
-		          <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt=""/>
-		        </a>
+		        <a className="navbar-brand" href="#">Start Bootstrap</a>
 		        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 		          <span className="navbar-toggler-icon"></span>
 		        </button>
@@ -34,13 +35,23 @@ export default class App extends React.Component{
 		          </ul>
 		        </div>
 		      </div>
-		    </nav>
+    		</nav>
 
-		    
+
+    		 
 		    <div className="container">
-		      <h1 className="mt-5">Logo Nav by Start Bootstrap</h1>
-		      <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
+		    	<Gallery/>
+
+
 		    </div>
+		   
+		    <footer className="py-5 bg-dark fixed-bottom">
+		      <div className="container">
+		        <p className="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+		      </div>
+		     
+		    </footer>
+
 		    
 		</div>
 	);
