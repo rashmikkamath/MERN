@@ -8,36 +8,23 @@ let imageUrls =['../images/pic1.jpg',
 
 export default class Gallery extends React.Component {
 	renderImage(imageUrl) {
-    return (
-      <div>
-        Hi
-      </div>
-    );
-  }
-
-	
-	
+	    return (
+	      <div>
+	        Hi
+	      </div>
+	    );
+  	}
 	render(){
-
-		
 		return(
 			<div>
-				 <h1 className="my-4 text-center text-lg-left">Thumbnail Gallery</h1>
-				 	
-
+				 <h1 className="my-4 text-center text-lg-left">Gallery</h1>
       			<div className="row text-center text-lg-left">
       				<div className="col-lg-3 col-md-4 col-xs-6">
       					<a href="#" className="d-block mb-4 h-100">
-      					
-			            	
-      					
 			         	</a>
         			</div>
 				</div>
 			</div>
-
-
-
 
 		);
 	}

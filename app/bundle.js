@@ -22417,6 +22417,14 @@ var _Gallery = __webpack_require__(185);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
+var _Header = __webpack_require__(188);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Footer = __webpack_require__(189);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22441,91 +22449,13 @@ var App = function (_React$Component) {
 			return _react2.default.createElement(
 				"div",
 				null,
-				_react2.default.createElement(
-					"nav",
-					{ className: "navbar navbar-expand-lg navbar-dark bg-dark fixed-top" },
-					_react2.default.createElement(
-						"div",
-						{ className: "container" },
-						_react2.default.createElement(
-							"a",
-							{ className: "navbar-brand", href: "#" },
-							"Start Bootstrap"
-						),
-						_react2.default.createElement(
-							"button",
-							{ className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
-							_react2.default.createElement("span", { className: "navbar-toggler-icon" })
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "collapse navbar-collapse", id: "navbarResponsive" },
-							_react2.default.createElement(
-								"ul",
-								{ className: "navbar-nav ml-auto" },
-								_react2.default.createElement(
-									"li",
-									{ className: "nav-item active" },
-									_react2.default.createElement(
-										"a",
-										{ className: "nav-link", href: "#" },
-										"Home",
-										_react2.default.createElement(
-											"span",
-											{ className: "sr-only" },
-											"(current)"
-										)
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ className: "nav-item" },
-									_react2.default.createElement(
-										"a",
-										{ className: "nav-link", href: "#" },
-										"About"
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ className: "nav-item" },
-									_react2.default.createElement(
-										"a",
-										{ className: "nav-link", href: "#" },
-										"Services"
-									)
-								),
-								_react2.default.createElement(
-									"li",
-									{ className: "nav-item" },
-									_react2.default.createElement(
-										"a",
-										{ className: "nav-link", href: "#" },
-										"Contact"
-									)
-								)
-							)
-						)
-					)
-				),
+				_react2.default.createElement(_Header2.default, null),
 				_react2.default.createElement(
 					"div",
 					{ className: "container" },
 					_react2.default.createElement(_Gallery2.default, null)
 				),
-				_react2.default.createElement(
-					"footer",
-					{ className: "py-5 bg-dark fixed-bottom" },
-					_react2.default.createElement(
-						"div",
-						{ className: "container" },
-						_react2.default.createElement(
-							"p",
-							{ className: "m-0 text-center text-white" },
-							"Copyright \xA9 Your Website 2017"
-						)
-					)
-				)
+				_react2.default.createElement(_Footer2.default, null)
 			);
 		}
 	}]);
@@ -22591,14 +22521,13 @@ var Gallery = function (_React$Component) {
 	}, {
 		key: "render",
 		value: function render() {
-
 			return _react2.default.createElement(
 				"div",
 				null,
 				_react2.default.createElement(
 					"h1",
 					{ className: "my-4 text-center text-lg-left" },
-					"Thumbnail Gallery"
+					"Gallery"
 				),
 				_react2.default.createElement(
 					"div",
@@ -22720,6 +22649,172 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(32);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+	_inherits(Header, _React$Component);
+
+	function Header() {
+		_classCallCheck(this, Header);
+
+		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	}
+
+	_createClass(Header, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"nav",
+				{ className: "navbar navbar-expand-lg navbar-dark bg-dark fixed-top" },
+				_react2.default.createElement(
+					"div",
+					{ className: "container" },
+					_react2.default.createElement(
+						"a",
+						{ className: "navbar-brand", href: "#" },
+						"Name"
+					),
+					_react2.default.createElement(
+						"button",
+						{ className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
+						_react2.default.createElement("span", { className: "navbar-toggler-icon" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "collapse navbar-collapse", id: "navbarResponsive" },
+						_react2.default.createElement(
+							"ul",
+							{ className: "navbar-nav ml-auto navbar-right" },
+							_react2.default.createElement(
+								"li",
+								{ className: "nav-item active" },
+								_react2.default.createElement(
+									"a",
+									{ className: "nav-link", href: "#" },
+									"Home",
+									_react2.default.createElement(
+										"span",
+										{ className: "sr-only" },
+										"(current)"
+									)
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								{ className: "nav-item" },
+								_react2.default.createElement(
+									"a",
+									{ className: "nav-link", href: "#" },
+									"About"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								{ className: "nav-item" },
+								_react2.default.createElement(
+									"a",
+									{ className: "nav-link", href: "#" },
+									"Services"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								{ className: "nav-item" },
+								_react2.default.createElement(
+									"a",
+									{ className: "nav-link", href: "#" },
+									"Contact"
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Header;
+}(_react2.default.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(32);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_React$Component) {
+	_inherits(Footer, _React$Component);
+
+	function Footer() {
+		_classCallCheck(this, Footer);
+
+		return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	}
+
+	_createClass(Footer, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"footer",
+				{ className: "py-5 bg-dark fixed-bottom" },
+				_react2.default.createElement(
+					"div",
+					{ className: "container" },
+					_react2.default.createElement("p", { className: "m-0 text-center text-white" })
+				)
+			);
+		}
+	}]);
+
+	return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
